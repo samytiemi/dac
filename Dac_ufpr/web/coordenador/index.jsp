@@ -37,9 +37,8 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.jsp">Home</a></li>
-                <li><a href="curso.jsp">Curso</a></li>
-                <li><a href="solicitacoes.jsp">Solicitações</a></li>
-                <li><a href="meuperfil.jsp">Meu perfil</a></li>
+                <li><a href="index.jsp">Grade Horária</a></li>
+                <li><a href="professores.jsp">Professores</a></li>
                 <li><a href="#">Sair</a></li>
             </ul>
         </div>    
@@ -50,8 +49,15 @@
       <div class="jumbotron">
         <div class="container">
             <br />
-            <p>Minha Grade Horária</p>
+            <p>Grade Horária - TADS</p>
             <br />
+            Selecione o período:
+            <select>
+                <option>-----------</option>
+                <option>1º período</option>
+                <option>2º período</option>
+            </select>
+            <br /><br />
             <div class="table-responsive">
                 <table class="table">
                     <tr>

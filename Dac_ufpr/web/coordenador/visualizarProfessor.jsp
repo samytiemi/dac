@@ -49,68 +49,41 @@
       <div class="jumbotron">
         <div class="container">
             <br />
-            <p>Lista de Professores</p>
-            <br /><br />
+            <p>Meu Perfil</p>
+            <br />
+            <div class="col-md-6">
+                <div class="form-group">
+                  Nome: João dos Santos
+                </div>
+                <div class="form-group">
+                  Data de nascimento: 13/12/1980
+                </div>
+                <div class="form-group">
+                  CPF: 000.000.000-00
+                </div>
+                <div class="form-group">
+                   Data de admissão: 23/07/2000
+                </div>
+                <div class="form-group">
+                   CEP: 80.789-230
+                </div>
+                  <div class="form-group">
+                    Endereço: Rua Alcides Vieira
+                  </div>
+                  <div class="form-group">
+                    Número: 1255
+                  </div>
+
+                <div class="form-group">
+                    E-mail:joao@teste.com
+                </div>
+                <div class="form-group">
+                    Senha: <a href="#">Alterar Senha</a>
+                </div>
+                
+                <button type="submit" class="btn btn-default">Excluir Professor</button>
             
-            <div class="table-responsive">
-                <table class="table">
-                    <tr>
-                        <td>
-                            <p>Código</p>
-                        </td>
-                        <td>
-                            <p>Nome</p>
-                        </td>
-                        <td>
-                            <p>Disciplinas</p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>001</p>
-                        </td>
-                        <td>
-                            <p>Rafaela Otemaier</p>
-                        </td>
-                        <td>
-                            <p>Web II | DAC</p>
-                        </td>
-                        <td>
-                            <a href="visualizarProfessor.jsp"><button type="button" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-search"></span> 
-                                </button></a>
-                            <button type="button" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-trash"></span> 
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>001</p>
-                        </td>
-                        <td>
-                            <p>Rafaela Otemaier</p>
-                        </td>
-                        <td>
-                            <p>Web II | DAC</p>
-                        </td>
-                        <td>
-                            <a href="visualizarProfessor.jsp"><button type="button" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-search"></span> 
-                                </button></a>
-                            <button type="button" class="btn btn-default btn-sm">
-                                <span class="glyphicon glyphicon-trash"></span> 
-                            </button>
-                        </td>
-                    </tr>
-                    
-                </table>
-            </div>
-            
-            
+            </div> 
       </div>
           <br/> <br /> <br /> <br />
     </div>
