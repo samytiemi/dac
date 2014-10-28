@@ -65,7 +65,7 @@
                 </select>
             </div>
 
-                    <button type="submit" class="btn btn-default">Enviar Solicitação</button>
+                    <button type="submit" class="btn btn-default">Adicionar Disciplina</button>
                 </div>
           </form>
             <br /><br />
@@ -213,10 +213,12 @@
                     
                 </table>
             </div>
-            
+            <button type="submit" class="btn btn-default">Enviar Solicitação</button>
       </div>
-          <br/> <br /> <br /> <br />
+          
+          <br/><br /> <br /> <br />
     </div>
+      
     <div class="container">
         <footer align="center">
             <p>&copy; Tads 2014</p>
