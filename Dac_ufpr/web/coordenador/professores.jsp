@@ -37,6 +37,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.jsp">Home</a></li>
+                
                 <li><a href="solicitacoes.jsp">Solicitações</a></li>
                 <li><a href="meuperfil.jsp">Meu perfil</a></li>
                 <li><a href="#">Sair</a></li>
@@ -49,170 +50,121 @@
       <div class="jumbotron">
         <div class="container">
             <br />
-            <p>Nova Solicitação</p>
+            <p>Solicitações</p>
             <br />
-            <form role="form" class="row" action="ProcessaSolicitacao" method="POST">
-            <div class="col-md-4">
-            <div class="form-group">
-              <label for="cargaHoraria">Carga Horária</label>
-              <input type="number" class="form-control" id="cargaHoraria">
-						
-            </div>
-            <div class="form-group">
-                <label for="disciplina">Disciplina</label>
-                <select class="form-control">
-                    <option></option>
-                </select>
-            </div>
-
-                    <button type="submit" class="btn btn-default">Enviar Solicitação</button>
-                </div>
-          </form>
+            <a href="cadastrarSolicitacao.jsp" <button class="btn btn-default">Nova Solicitação</button></a>
             <br /><br />
-            
-                    <div class="table-responsive">
+            <div class="table-responsive">
                 <table class="table">
                     <tr>
+                        <td>
+                            <p>Status</p>
+                        </td>
+                        <td>
+                            <p>Dia</p>
+                        </td>
                         <td>
                             <p>Horário</p>
                         </td>
                         <td>
-                            <p>Segunda</p>
+                            <p>Disciplina</p>
                         </td>
                         <td>
-                            <p>Terça</p>
-                        </td>
-                        <td>
-                            <p>Quarta</p>
-                        </td>
-                        <td>
-                            <p>Quinta</p>
-                        </td>
-                        <td>
-                            <p>Sexta</p>
-                        </td>
-                        <td>
-                            <p>Sábado</p>
+                            <p></p>
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <p>Aceita</p>
+                        </td>
+                        <td>
+                            <p>15/07/2014</p>
+                        </td>
                         <td>
                             <p>13:30</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>Web II</p>
                         </td>
                         <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span> 
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-trash"></span> 
+                            </button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>14:20</p>
+                            <p>Aceita</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>15/07/2014</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>13:30</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>Web II</p>
                         </td>
                         <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>15:30</p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span> 
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-trash"></span> 
+                            </button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>16:20</p>
+                            <p>Aceita</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>15/07/2014</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>13:30</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>Web II</p>
                         </td>
                         <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span> 
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-trash"></span> 
+                            </button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>17:10</p>
+                            <p>Aceita</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>15/07/2014</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>13:30</p>
                         </td>
                         <td>
-                            <p></p>
+                            <p>Web II</p>
                         </td>
                         <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
-                        </td>
-                        <td>
-                            <p></p>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span> 
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-trash"></span> 
+                            </button>
                         </td>
                     </tr>
                     
                 </table>
             </div>
+            
             
       </div>
           <br/> <br /> <br /> <br />

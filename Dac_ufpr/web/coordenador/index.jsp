@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title></title>
+    <title>Grade Horária - TADS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -32,11 +32,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Grade Horaria - TADS</a>
+                <a class="navbar-brand" href="index.jsp">Grade Horaria - TADS</a>
              </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.jsp">Home</a></li>
+                <li><a href="curso.jsp">Curso</a></li>
                 <li><a href="solicitacoes.jsp">Solicitações</a></li>
                 <li><a href="meuperfil.jsp">Meu perfil</a></li>
                 <li><a href="#">Sair</a></li>
@@ -49,28 +50,9 @@
       <div class="jumbotron">
         <div class="container">
             <br />
-            <p>Nova Solicitação</p>
+            <p>Minha Grade Horária</p>
             <br />
-            <form role="form" class="row" action="ProcessaSolicitacao" method="POST">
-            <div class="col-md-4">
-            <div class="form-group">
-              <label for="cargaHoraria">Carga Horária</label>
-              <input type="number" class="form-control" id="cargaHoraria">
-						
-            </div>
-            <div class="form-group">
-                <label for="disciplina">Disciplina</label>
-                <select class="form-control">
-                    <option></option>
-                </select>
-            </div>
-
-                    <button type="submit" class="btn btn-default">Enviar Solicitação</button>
-                </div>
-          </form>
-            <br /><br />
-            
-                    <div class="table-responsive">
+            <div class="table-responsive">
                 <table class="table">
                     <tr>
                         <td>
@@ -214,6 +196,9 @@
                 </table>
             </div>
             
+            <a href="#"><button class="btn btn-default">Gerar Grade Horária</button></a>
+            
+            </div> 
       </div>
           <br/> <br /> <br /> <br />
     </div>
@@ -232,3 +217,4 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+

@@ -36,9 +36,9 @@
              </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Solicitações</a></li>
-                <li><a href="#">Meu perfil</a></li>
+                <li><a href="index.jsp">Home</a></li>
+                <li><a href="solicitacoes.jsp">Solicitações</a></li>
+                <li><a href="meuperfil.jsp">Meu perfil</a></li>
                 <li><a href="#">Sair</a></li>
             </ul>
         </div>    
