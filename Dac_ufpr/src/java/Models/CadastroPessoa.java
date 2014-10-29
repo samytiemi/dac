@@ -1,5 +1,5 @@
-
 package Models;
+
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,10 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author Samara
- */
+
 @WebServlet(name = "CadastroPessoa", urlPatterns = {"/CadastroPessoa"})
 public class CadastroPessoa extends HttpServlet {
 
