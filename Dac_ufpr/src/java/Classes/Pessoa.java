@@ -22,7 +22,7 @@ public class Pessoa {
         return idPessoa;
     }
     
-    public void setIdPessoa(){
+    public void setIdPessoa(int idPessoa){
         this.idPessoa = idPessoa;
     }
     
@@ -30,7 +30,7 @@ public class Pessoa {
         return datanasc;
     }
     
-    public void setDatanasc(){
+    public void setDatanasc(Date datanasc){
         this.datanasc = datanasc;
     }
     
@@ -38,7 +38,7 @@ public class Pessoa {
         return cpf;
     }
     
-    public void setCpf(){
+    public void setCpf(String cpf){
         this.cpf = cpf;
     }
     
@@ -46,7 +46,7 @@ public class Pessoa {
         return endereco;
     }
     
-    public void setEndereco(){
+    public void setEndereco(String endereco){
         this.endereco = endereco;
     }
     
@@ -54,7 +54,7 @@ public class Pessoa {
         return numendereco;
     }
     
-    public void setNumendereco(){
+    public void setNumendereco(int numendereco){
         this.numendereco = numendereco;
     }
     
@@ -62,7 +62,7 @@ public class Pessoa {
         return dataadmissao;
     }
     
-    public void setDataadmissao(){
+    public void setDataadmissao(Date dataadmissao){
         this.dataadmissao = dataadmissao;
     }
     
@@ -70,7 +70,7 @@ public class Pessoa {
         return nome;
     }
     
-    public void setNome(){
+    public void setNome(String nome){
         this.nome = nome;
     }
     
@@ -78,7 +78,7 @@ public class Pessoa {
         return login;
     }
     
-    public void setLogin(){
+    public void setLogin(String login){
         this.login = login;
     }
     
@@ -86,7 +86,7 @@ public class Pessoa {
         return senha;
     }
     
-    public void setSenha(){
+    public void setSenha(String senha){
         this.senha = senha;
     }
     
@@ -94,7 +94,7 @@ public class Pessoa {
         return coordenador;
     }
     
-    public void setCoordenador(){
+    public void setCoordenador(boolean coordenador){
         this.coordenador = coordenador;
     }
 }
