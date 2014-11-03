@@ -36,11 +36,11 @@ public class PessoaDAO {
                     + "dataAdmissao, nome, login, senha, coordenador ) values (?, ?, ?, ?, ?, ?, ?, ?, ?)", generatedColumns);
             
             
-            stmtInserir.setDate(1,(Date) pessoa.getDatanasc());
+            stmtInserir.setString(1,pessoa.getDatanasc());
             stmtInserir.setString(2, pessoa.getCpf());
             stmtInserir.setString(3, pessoa.getEndereco());
-            stmtInserir.setInt(4, pessoa.getNumendereco());
-            stmtInserir.setDate(5,(Date) pessoa.getDataadmissao());
+            stmtInserir.setString(4, pessoa.getNumendereco());
+            stmtInserir.setString(5,pessoa.getDataadmissao());
             stmtInserir.setString(6, pessoa.getNome());
             stmtInserir.setString(7, pessoa.getLogin());
             stmtInserir.setString(8, pessoa.getSenha());
@@ -91,11 +91,11 @@ public class PessoaDAO {
             if(rs.next()){
                 pessoaLida = new Pessoa();
                 pessoaLida.setIdPessoa(rs.getInt("idPessoa"));
-                pessoaLida.setDatanasc((Date) rs.getDate("dataNasc"));
+                pessoaLida.setDatanasc(rs.getString("dataNasc"));
                 pessoaLida.setCpf(rs.getString("cpf"));
                 pessoaLida.setEndereco(rs.getString("endereco"));
-                pessoaLida.setNumendereco(rs.getInt("numEndereco"));
-                pessoaLida.setDataadmissao((Date) rs.getDate("dataAdmssao"));
+                pessoaLida.setNumendereco(rs.getString("numEndereco"));
+                pessoaLida.setDataadmissao(rs.getString("dataAdmssao"));
                 pessoaLida.setNome(rs.getString("nome"));
                 pessoaLida.setLogin(rs.getString("login"));
                 pessoaLida.setSenha(rs.getString("senha"));

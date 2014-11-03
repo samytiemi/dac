@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Pessoa {
     private int idPessoa;
-    private Date datanasc;
+    private String datanasc;
     private String cpf;
     private String cep;
     private String endereco;
-    private int numendereco;
-    private Date dataadmissao;
+    private String numendereco;
+    private String dataadmissao;
     private String nome;
     private String login;
     private String senha;
@@ -27,11 +27,11 @@ public class Pessoa {
         this.idPessoa = idPessoa;
     }
     
-    public Date getDatanasc(){
+    public String getDatanasc(){
         return datanasc;
     }
     
-    public void setDatanasc(Date datanasc){
+    public void setDatanasc(String datanasc){
         this.datanasc = datanasc;
     }
     
@@ -59,19 +59,19 @@ public class Pessoa {
         this.endereco = endereco;
     }
     
-    public int getNumendereco(){
+    public String getNumendereco(){
         return numendereco;
     }
     
-    public void setNumendereco(int numendereco){
+    public void setNumendereco(String numendereco){
         this.numendereco = numendereco;
     }
     
-    public Date getDataadmissao(){
+    public String getDataadmissao(){
         return dataadmissao;
     }
     
-    public void setDataadmissao(Date dataadmissao){
+    public void setDataadmissao(String dataadmissao){
         this.dataadmissao = dataadmissao;
     }
     
