@@ -62,7 +62,7 @@
           <p>Cadastre-se<br />
           Preencha o formulário abaixo:</p>
           
-          <form role="form" class="row" action="CadastroPessoa" method="post">
+          <form role="form" class="row" action="Cadastro" method="post">
             <div class="col-md-6">
             <div class="form-group">
               <label for="nome">Nome</label>

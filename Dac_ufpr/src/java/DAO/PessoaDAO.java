@@ -9,11 +9,16 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/*
+
+
+*/
+
 public class PessoaDAO {
     
     private Connection connection;
     private PreparedStatement stmtInserir,stmtExcluir, stmtPesquisar;
-    private String generatedColumns[] = { "idPessoa" };
+    private String generatedColumns[] = {"idpessoa"};
     private ResultSet rs = null;
 
     
@@ -57,7 +62,7 @@ public class PessoaDAO {
     
  
     
-    public void excluirPaciente (Pessoa pessoa) throws SQLException{
+    public void excluirPessoa (Pessoa pessoa) throws SQLException{
         try{
             try {
                 connection = ConnectionFactory.getConnection();
