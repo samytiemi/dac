@@ -41,38 +41,57 @@
           </button>
           <a class="navbar-brand" href="#">Grade Horaria - TADS</a>
         </div>
-          <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse">
             <div class="navbar-form navbar-right">
-                <a href="cadastre-se.html"><button class="btn btn-success">Cadastre-se</button></a>
+                <a href="index.html"><button class="btn btn-success">Entrar</button></a>
             </div>
           </div><!--/.navbar-collapse -->
         </div>
       </div>
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+      <div class="jumbotron">
         <div class="container">
-            <br /><br /><br /><br /><br />
-            <h2></h2>
-            <br />
-            <center>
-            
-            <form class="navbar-form" role="form" action="Login" method="get">
-                <p>Painel de Login</p>
-                <input type="text" placeholder="Email" class="form-control" name="login">
-                <br />
-                <input type="password" placeholder="Senha" class="form-control" name="senha">
-                <br /><br />
-                <input type="checkbox" name="" />Entrar como coordenador
-                              
-                <br /><br />
-                <input type="submit" class="btn btn-primary btn-lg" value="Entrar"/>
-                
-            </form>
-            <a href="lembrarSenha.html">Esqueci a senha</a>
-            </center>
-            <br /><br /><br /><br /><br />
-        </div>
+            <h1><small>Bem vindo! Novo na universidade?</small></h1>
+          <p>Cadastre-se preenchendo o formulário abaixo:</p>
+          <form role="form" class="row" action="CadastroPessoa" method="post">
+            <div class="col-md-6">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" name="nome" /> 
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" name="cpf" /> 
+            </div>
+            <div class="form-group">
+                <label for="datanasc">Data Nascimento</label>
+                <input type="date" class="form-control" name="datanasc" /> 
+            </div>  
+            <div class="form-group">
+                <label for="dataadmissao">Data de Admissão</label>
+                <input type="date" class="form-control" name="dataadmissao" /> 
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control" name="endereco" />
+            </div>
+            <div class="form-group">
+                <label for="numendereco">Número</label>
+                <input type="text" class="form-control" name="numendereco" />
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" class="form-control" name="email" />
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" name="senha"/>
+            </div>
+            <input type="submit" class="btn btn-primary btn-lg" value="Cadastrar" />
+            </div>
+          </form>
+      </div>
     </div>
     <div class="container">
         <footer align="center">
@@ -89,3 +108,4 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
