@@ -28,28 +28,15 @@ public class CadastroPessoa extends HttpServlet {
             Pessoa professor = new Pessoa(); 
           
             professor.setNome(request.getParameter("nome"));
-            professor.setDatanasc("datanasc");
-            professor.setCpf("cpf");
-            professor.setDataadmissao("dataadmissao");
-            professor.setCep("cep");
-            professor.setEndereco("endereco");
-            professor.setNumendereco("numendereco");
-            professor.setLogin("email");
-            professor.setSenha("senha"); 
-            professor.setCoordenador(false);
-            /*
-            request.setAttribute("mensagem","CONFIRMAÇÃO DOS DADOS:");
-            request.setAttribute("nome",professor.getNome());
-            request.setAttribute("datanasc",professor.getDatanasc());
-            request.setAttribute("cpf",professor.getDataadmissao());
-            request.setAttribute("cep",professor.getCep());
-            request.setAttribute("endereco",professor.getEndereco());
-            request.setAttribute("numendereco",professor.getNumendereco());
-            request.setAttribute("email",professor.getLogin());
-            request.setAttribute("senha", professor.getSenha());
-            RequestDispatcher rd;
-            rd = getServletContext().getRequestDispatcher("/mostrar.jsp");
-            rd.forward(request,response);*/
+            professor.setCpf(request.getParameter("cpf"));
+            professor.setDatanasc(request.getParameter("datanasc"));
+            professor.setDataadmissao(request.getParameter("dataadmissao"));
+            professor.setCep(request.getParameter("cep"));
+            professor.setEndereco(request.getParameter("endereco"));
+            professor.setNumendereco(request.getParameter("numendereco"));
+            professor.setLogin(request.getParameter("email"));
+            professor.setSenha(request.getParameter("senha"));
+           
            PessoaDAO pessoaDao = new PessoaDAO();
            pessoaDao.inserirPessoa(professor);
             
