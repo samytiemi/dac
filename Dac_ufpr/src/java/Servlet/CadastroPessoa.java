@@ -1,4 +1,4 @@
-package Models;
+package Servlet;
 
 import DAO.PessoaDAO;
 import Classes.Pessoa;
@@ -37,8 +37,13 @@ public class CadastroPessoa extends HttpServlet {
             professor.setLogin(request.getParameter("email"));
             professor.setSenha(request.getParameter("senha"));
            
-           PessoaDAO pessoaDao = new PessoaDAO();
-           pessoaDao.inserirPessoa(professor);
+            PessoaDAO pessoaDao = new PessoaDAO();
+            pessoaDao.inserirPessoa(professor);
+            
+            request.setAttribute("mensagem","Cadastro efetuado com sucesso!");
+            RequestDispatcher rd;
+            rd = getServletContext().getRequestDispatcher("/sucesso.jsp");
+            rd.forward(request,response);
             
     }
     

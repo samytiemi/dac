@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title></title>
+    <title>Cadastre-se</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,11 +21,8 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="/js/jquery.js" type="text/javascript"></script>
+    
   </head>
 
   <body>
@@ -54,41 +51,68 @@
         <div class="container">
             <h1><small>Bem vindo! Novo na universidade?</small></h1>
           <p>Cadastre-se preenchendo o formulário abaixo:</p>
-          <form role="form" class="row" action="CadastroPessoa" method="post">
-            <div class="col-md-6">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" name="nome" /> 
+          <form role="form" class="row" id="FormCadastro" action="CadastroPessoa" method="post">
+              
+            <div class="col-md-10">
+                <div class="col-md-10 form-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" class="form-control" name="nome" /> 
+                </div>
             </div>
-            <div class="form-group">
-                <label for="cpf">CPF</label>
-                <input type="text" class="form-control" name="cpf" /> 
+            <div class="col-md-10">
+                <div class="col-md-2 form-group">
+                    <label for="cpf">CPF *</label>
+                    <input type="text" class="form-control" name="cpf" id="cpf" onblur="javascript:validarCpf(this.value)"  onkeypress="mascara(this, '###.###.###-##')" maxlength="14" placeholder="000.000.000-00" /> 
+                </div>       
+       
+                <div class="col-md-3 form-group">
+                    <label for="datanasc">Data Nascimento *</label>
+                    <input type="date" class="form-control" name="datanasc" /> 
+                </div>
+            
+                <div class="col-md-3 form-group">
+                    <label for="dataadmissao">Data de Admissão *</label>
+                    <input type="date" class="form-control" name="dataadmissao" /> 
+                </div>
             </div>
-            <div class="form-group">
-                <label for="datanasc">Data Nascimento</label>
-                <input type="date" class="form-control" name="datanasc" /> 
-            </div>  
-            <div class="form-group">
-                <label for="dataadmissao">Data de Admissão</label>
-                <input type="date" class="form-control" name="dataadmissao" /> 
+              
+            <div class="col-md-10">
+                <div class="col-md-7 form-group">
+                    <label for="endereco">Endereço *</label>
+                    <input type="text" class="form-control" name="endereco" />
+                </div>
+            
+                <div class="col-md-3 form-group">
+                    <label for="numendereco">Número *</label>
+                    <input type="number" class="form-control" name="numendereco" />
+                </div>
             </div>
-            <div class="form-group">
-                <label for="endereco">Endereço</label>
-                <input type="text" class="form-control" name="endereco" />
+              
+            <div class="col-md-10">
+                <div class="col-md-5 form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="text" class="form-control" name="email" />
+                </div>
+           
+                <div class="col-md-5 form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" name="senha"/>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="numendereco">Número</label>
-                <input type="text" class="form-control" name="numendereco" />
+            <div class="col-md-10">
+                          
+                <div class="col-md-5 form-group">
+                    <label for="senha1">Confirmação de senha *</label>
+                    <input type="password" class="form-control" name="senha1"/>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="text" class="form-control" name="email" />
-            </div>
-            <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="password" class="form-control" name="senha"/>
-            </div>
-            <input type="submit" class="btn btn-primary btn-lg" value="Cadastrar" />
+            <div class="col-md-10">
+                <div class="col-md-2">
+                    <button class="btn btn-primary btn-lg"  onClick="validarSenha()"> Cadastrar </button>
+                </div>
+                <div class="col-md-2">
+                    <input type="reset" class="btn btn-warning btn-lg" value="Limpar" />
+                </div>
             </div>
           </form>
       </div>
@@ -106,6 +130,18 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/validarCpf.js"></script>
+    <script language="JavaScript">
+        function mascara(t, mask){
+            var i = t.value.length;
+            var saida = mask.substring(1,0);
+            var texto = mask.substring(i);
+            if (texto.substring(0,1) != saida){
+                t.value += texto.substring(0,1);
+            }
+        }
+    </script>
+    
   </body>
 </html>
 
