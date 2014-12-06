@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
@@ -21,11 +22,11 @@ import javax.servlet.http.HttpServletResponse;
 public class Login1 extends HttpServlet {
     java.sql.Connection cnx;
     
-    @Override
+    //@Override
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void ProcessRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-       // response.setContentType("text/html;charset=UTF-8");
+       response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String  user = request.getParameter("login");
         String  pwd = request.getParameter("senha");
@@ -51,7 +52,7 @@ public class Login1 extends HttpServlet {
                   String sqlVerifica = "select login,senha from pessoa where login=" + user + "'";
                   buscar = cnx.createStatement();
                   rs  = buscar.executeQuery(sqlVerifica);
-                  //java.sql.ResultSetMetaData dados = rs.getMetaData();
+                  java.sql.ResultSetMetaData dados = rs.getMetaData();
                   rs.next();
                //   out.print("senha digitada é " + pwd);
                 //  out.print(" Senha correta é " + rs.getObject(2));
@@ -64,8 +65,8 @@ public class Login1 extends HttpServlet {
 
 
                 //String sqlVerifica = "select nome,senha from login.usuarios where nome='" + user + "'";
-                //java.sql.PreparedStatement VerLogin = cnx.prepareStatement(sqlVerifica);
-                //ResultSetMetaData teste = VerLogin.getMetaData();
+                java.sql.PreparedStatement VerLogin = cnx.prepareStatement(sqlVerifica);
+                ResultSetMetaData teste = VerLogin.getMetaData();
 
             } catch (SQLException ex1) {
                 Logger.getLogger(Login1.class.getName()).log(Level.SEVERE, null, ex1);
